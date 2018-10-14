@@ -1,10 +1,4 @@
 from setuptools import setup, find_packages
-from setuptools.command.develop import develop
-from setuptools.command.install import install
-
-class _develop(develop):
-    def run(self):
-        develop.run(self)
 
 setup(
     name='ThreeSidedCoin',
@@ -15,8 +9,4 @@ setup(
     packages = find_packages(),
     install_requires = ['numpy','pybullet','tqdm','matplotlib'],
     include_package_data=True,
-    cmdclass={
-        'develop': _develop,
-        'install': _develop,
-    }
 )

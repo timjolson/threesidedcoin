@@ -43,6 +43,7 @@ for i in results:
         ratios.append(i[0])
         percents.append(i[1])
 
+fig = plt.figure(figsize=(7,4))
 plt.scatter(ratios, percents)
 
 coeffs = np.polyfit(ratios, percents, deg=2)
@@ -50,8 +51,9 @@ line = np.poly1d(coeffs)
 plt.plot(ratios, line(ratios))
 
 best = minimize(line, x0=losses[0][0])
-print(f'projected best: at ratio: {best.x} with loss: {best.fun}')
+print(f'projected best: at ratio: {best.x[0]} with loss: {best.fun}')
 
-plt.plot([best.x, best.x], [-.01, 1/3])
-plt.title(label=f"{coeffs[0]}*r^2 + {coeffs[1]}*r + {coeffs[2]}")
+plt.plot([best.x, best.x], [-0.01, 1/3])
+plt.title(label=f"Projected best ratio:{best.x[0]}")
 plt.show()
+fig.savefig('results.png')

@@ -35,3 +35,5 @@ Install may take a long time, as several dependencies are heavy.
 
 ## results
     results.dat - log of sim results: (ratio, error of landing on edge rate, successful flips)
+
+<img width="600" src="/results.png">

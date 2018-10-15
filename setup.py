@@ -7,6 +7,6 @@ setup(
     author = 'Tim Olson',
     author_email = 'timjolson@user.noreplay.github.com',
     packages = find_packages(),
-    install_requires = ['numpy','pybullet','tqdm','matplotlib'],
+    install_requires = ['numpy','pybullet','tqdm','matplotlib', 'scipy'],
     include_package_data=True,
 )

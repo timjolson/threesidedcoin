@@ -1,0 +1,530 @@
+Starting sim of 10 points, 20 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 10 points, 20 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 50 points, 20 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 10 points, 200 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 500 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.5, 1.2].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.5, 1.2].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.5, 1.2].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.5, 1.2].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.5, 1.2].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.5, 1.2].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.5, 1.2].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.5, 1.2].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 3 points, 500 flips each, in range [0.5, 1.2].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 100 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 200 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 8 points, 200 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process shutting down
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process exiting with exitcode 0
+process shutting down
+Starting sim of 250 points, 3000 flips each, in range [0.85, 1.0].
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+child process calling self.run()
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process shutting down
+process exiting with exitcode 1
+process exiting with exitcode 1
+process exiting with exitcode 1
+process exiting with exitcode 1
+process exiting with exitcode 1
+process exiting with exitcode 1
+process exiting with exitcode 1
+process shutting down
+process exiting with exitcode 1
+INFO:root:Starting sim of 200 points, 3000 flips each, in range [0.85, 1.0].
+INFO:root:Starting sim of 10 points, 3000 flips each, in range [0.85, 1.0].
+INFO:root:Starting sim of 11 points, 3000 flips each, in range [0.85, 1.0].
+INFO:root:Starting sim of 20 points, 2000 flips each, in range [0.98, 1.1].
+INFO:root:Starting sim of 100 points, 3000 flips each, in range [0.98, 1.1].
+INFO:root:Starting sim of 30 points, 3000 flips each, in range [0.95, 0.99].
+INFO:root:Starting sim of 10 points, 3000 flips each, in range [0.9, 1.0].
+INFO:root:Finished linspace sim.
+INFO:root:Starting sim of 30 points, 3000 flips each, in range [0.95, 0.99].
+INFO:root:Finished linspace sim.

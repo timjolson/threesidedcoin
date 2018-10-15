@@ -36,12 +36,10 @@ losses = sorted(results, key=lambda x: x[1])
 
 ratios, percents = [], []
 for i in results:
-    # each 100 flips counts the data point again
-    # ~~weights more flips heavier (assume more accurate result)
-    for _ in range(int(np.round(i[2]/100))):
-    #for _ in range(i[2]):
-        ratios.append(i[0])
-        percents.append(i[1])
+    if 0.92<i[0]<1.01:
+        for _ in range(int(i[2]/100)):
+            ratios.append(i[0])
+            percents.append(i[1])
 
 fig = plt.figure(figsize=(7,4))
 plt.scatter(ratios, percents)

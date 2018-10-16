@@ -528,3 +528,6 @@ INFO:root:Starting sim of 10 points, 3000 flips each, in range [0.9, 1.0].
 INFO:root:Finished linspace sim.
 INFO:root:Starting sim of 30 points, 3000 flips each, in range [0.95, 0.99].
 INFO:root:Finished linspace sim.
+INFO:root:Starting sim of 20 points, 5000 flips each, in range [0.94, 0.96].
+INFO:root:Starting sim of 20 points, 5000 flips each, in range [0.94, 0.96].
+INFO:root:Starting sim of 200 points, 10000 flips each, in range [0.92, 0.98].

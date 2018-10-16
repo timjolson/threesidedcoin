@@ -53,5 +53,5 @@ print(f'projected best: at ratio: {best.x[0]} with loss: {best.fun}')
 
 plt.plot([best.x, best.x], [-0.01, 1/3])
 plt.title(label=f"Projected best ratio:{best.x[0]}")
-plt.show()
+#plt.show()
 fig.savefig('results.png')

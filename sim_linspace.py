@@ -12,12 +12,12 @@ import logging
 
 logging.basicConfig(filename='./sim.log', level=logging.INFO)
 
-num_points = 20
-lims = [0.94, 0.96]
+num_points = 200
+lims = [0.92, 0.98]
 
 sim = Sim(
-    flips = 3000,
-    timestep = 1/2000.,
+    flips = 10000,
+    timestep = 1/1000.,
     sim_type = p.DIRECT,  # p.GUI, p.DIRECT, p.SHARED_MEMORY
 )
 

@@ -3,7 +3,7 @@
 	<link name="base_link">
 	    <visual>
 	      <geometry>
-	        <cylinder length="0.4853448275862069" radius="0.5"/>
+	        <cylinder length="0.46407035175879396" radius="0.5"/>
 	      </geometry>
 	      <material name="blue">
 	        <color rgba="0 0 .8 1"/>
@@ -11,12 +11,12 @@
 	    </visual>
 	    <collision>
 	      <geometry>
-	        <cylinder length="0.4853448275862069" radius="0.5"/>
+	        <cylinder length="0.46407035175879396" radius="0.5"/>
 	      </geometry>
 	    </collision>
 	    <inertial>
-        	    <mass value="0.3811889362006581"/>
-        	    <inertia ixx="0.03130703467674213" ixy="0.0" ixz="0.0" iyy="0.03130703467674213" iyz="0.0" izz="0.04764861702508226"/>
+        	    <mass value="0.36448000195856456"/>
+        	    <inertia ixx="0.02932124044778856" ixy="0.0" ixz="0.0" iyy="0.02932124044778856" iyz="0.0" izz="0.04556000024482057"/>
 	    </inertial>
 	</link>
 </robot>

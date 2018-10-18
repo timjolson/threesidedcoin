@@ -51,7 +51,7 @@ plt.plot(ratios, line(ratios))
 best = minimize(line, x0=losses[0][0])
 print(f'projected best: at ratio: {best.x[0]} with loss: {best.fun}')
 
-plt.plot([best.x, best.x], [-0.01, 1/3])
+plt.plot([best.x, best.x], [-0.01, losses[-1][1]])
 plt.title(label=f"Projected best ratio:{best.x[0]}")
 #plt.show()
 fig.savefig('results.png')

@@ -13,11 +13,11 @@ import logging
 logging.basicConfig(filename='./sim.log', level=logging.INFO)
 
 num_points = 200
-lims = [0.92, 0.98]
+lims = [0.935, 0.955]
 
 sim = Sim(
-    flips = 10000,
-    timestep = 1/1000.,
+    flips = 500000,
+    timestep = 1/3000.,
     sim_type = p.DIRECT,  # p.GUI, p.DIRECT, p.SHARED_MEMORY
 )
 
@@ -60,5 +60,4 @@ sim.end()
 logging.info('Finished linspace sim.')
 print('done')
 
-import show_results
-
+import mod_results

@@ -22,6 +22,7 @@ sim = Sim(
 )
 
 def loss(edge, goal=1/3):
+    logging.info(f"loss: {np.fabs(edge - goal)}")
     return np.fabs(edge - goal)
 
 _R = list(np.linspace(lims[0], lims[1], num_points))
@@ -38,6 +39,7 @@ logging.info(f'Starting sim of {num_points} points, {sim.flips} flips each, in r
 for r in tqdm(R, position=0):
     results = {'heads':0, 'tails':0, 'edge':0, 'error':0}
     sim.ratio = r
+    logging.info(f"ratio: {sim.ratio}")
     
     for i in tqdm(range(sim.flips)):
         sim.reset_sim()
@@ -47,7 +49,7 @@ for r in tqdm(R, position=0):
     
         results[result] += 1
 
-    logging.debug(results)
+    logging.info(results)
     
     edges = results['edge']/(sim.flips - results['error'])
     edges = loss(edges)

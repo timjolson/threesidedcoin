@@ -14,18 +14,18 @@ from scipy.optimize import minimize
 logging.basicConfig(filename='./sim.log', level=logging.INFO)
 
 #########################
-start_num_flips = 10000
-flips_step_rate = 2000  # increase in flips count between ratio changes
-max_flips_limit = 1e8  # max number of flips for a ratio
+start_num_flips = 500000
+flips_step_rate = 50000  # increase in flips count between ratio changes
+max_flips_limit = 1e9  # max number of flips for a ratio
 
 start_timestep = 1/1000.
 timestep_rate = 0.00005  # decrease in timestep between ratio changes
 min_timestep_limit = 0.000001  # min timestep
 
 goal_rate = 1/3  # rate of result == edge
-tolerance = 1e-6  # tolerance to stop optimization
+tolerance = 1e-8  # tolerance to stop optimization
 
-lims = [0.94, 0.97]  # ratio bounds from youtube video
+lims = [0.956, 0.962]  # ratio bounds from youtube video
 #1. d = 2*sqrt(2) * height
 #   height = d/(2*sqrt(2)) = r/sqrt(2)
 #   height/r = 1/sqrt(2)
@@ -34,7 +34,7 @@ lims = [0.94, 0.97]  # ratio bounds from youtube video
 #   height/r = 2/sqrt(3)
 #########################
 
-start_guess=0.958
+start_guess=0.957
 # read previous results, start at best ratio
 #min_loss = 1e6
 #with open('results.dat', 'r') as f:
@@ -57,12 +57,14 @@ sim = Sim(
 )
 
 def loss(edge, goal=goal_rate):
+    logging.info(f"loss: {np.fabs(edge-goal)}")
     return np.fabs(edge - goal)
 
 def main(ratio, sim):
     results = {'heads':0, 'tails':0, 'edge':0, 'error':0}
     assert lims[0]<=ratio<=lims[1]
     sim.ratio = ratio[0]
+    logging.info(f"ratio: {sim.ratio}")
     
     for i in tqdm(range(sim.flips)):
         sim.reset_sim()
@@ -78,7 +80,7 @@ def main(ratio, sim):
     with open('results.dat', 'a') as f:
         f.write(str((sim.ratio, edges, sim.flips-results['error'])) + '\n')
 
-    logging.debug(f"ratio:{ratio}, loss:{edges} results:{results}")
+    logging.info(f"ratio:{ratio}, loss:{edges:.10f} results:{results}")
 
     sim.flips = min(sim.flips+flips_step_rate, max_flips_limit)
     sim.timestep = max(sim.timestep-timestep_rate, min_timestep_limit)
@@ -93,3 +95,4 @@ print(optimize_result)
 sim.end()
 
 #import show_results
+import mod_results

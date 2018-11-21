@@ -44,7 +44,7 @@ for i in results:
 fig = plt.figure(figsize=(7,4))
 plt.scatter(ratios, percents)
 
-coeffs = np.polyfit(ratios, percents, deg=2)
+coeffs = np.polyfit(ratios, percents, deg=3)
 line = np.poly1d(coeffs)
 plt.plot(ratios, line(ratios))
 

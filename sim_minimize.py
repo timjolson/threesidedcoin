@@ -14,8 +14,8 @@ from scipy.optimize import minimize
 logging.basicConfig(filename='./sim.log', level=logging.INFO)
 
 #########################
-start_num_flips = 500000
-flips_step_rate = 50000  # increase in flips count between ratio changes
+start_num_flips = 1000000
+flips_step_rate = 200000  # increase in flips count between ratio changes
 max_flips_limit = 1e9  # max number of flips for a ratio
 
 start_timestep = 1/1000.

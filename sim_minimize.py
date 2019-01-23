@@ -25,7 +25,10 @@ min_timestep_limit = 0.000001  # min timestep
 goal_rate = 1/3  # rate of result == edge
 tolerance = 1e-8  # tolerance to stop optimization
 
-lims = [0.956, 0.962]  # ratio bounds from youtube video
+# ratio bounds
+lims = [0.956, 0.962]
+
+# ratio bounds from youtube video
 #1. d = 2*sqrt(2) * height
 #   height = d/(2*sqrt(2)) = r/sqrt(2)
 #   height/r = 1/sqrt(2)
@@ -95,4 +98,4 @@ print(optimize_result)
 sim.end()
 
 #import show_results
-import mod_results
+import plot_results

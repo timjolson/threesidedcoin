@@ -12,19 +12,14 @@ Install may take a long time, as several dependencies are heavy.
     pip install -e .
 
 ## scripts
-    backend.py - supporting functions to run simulation, contains class Sim
+    simulator.py - supporting functions to run simulation, contains class Sim
   
-    show_results.py - displays results and data fitted curve, prints predicted optimal geometry
+    show_results.py - displays results and predicted optimal geometry, saves results.png
   
-    sim_simple.py - most basic example of running a simulation
-  
-    sim_linspace.py - run sim for a numpy.linspace of geometries
-  
-    sim_minimize.py - run sim, increasing number of flips and decreasing simulation timestep,
-                    while using scipy.optimize.minimize. With low accuracy/repeatability, scipy algorithm
-                    ends up outside the bounds, errors out.
-                    
-    sim_multiprocess_linspace.py - UNRELIABLE. Uses multiprocessing to run sim_linspace(s).
+    sim_simple.py - basic example of running a simulation
+    
+    sim_minimize.py - run sim, use scipy.optimize.minimize to find solution; 
+                      each iteration increases number of flips, decreases timestep
 
 ## files
     sim.log - log file of sims run

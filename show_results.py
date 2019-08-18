@@ -36,24 +36,21 @@ losses = sorted(results, key=lambda x: x[1])
 
 ratios, percents = [], []
 for i in results:
-    # each 100 flips counts the data point again
-    # ~~weights more flips heavier (assume more accurate result)
-    for _ in range(int(np.round(i[2]/100))):
-    #for _ in range(i[2]):
+    for _ in range(int(np.round(i[2]/1000))):  # every 1000 flips gets another data point
         ratios.append(i[0])
         percents.append(i[1])
 
 fig = plt.figure(figsize=(7,4))
 plt.scatter(ratios, percents)
 
-coeffs = np.polyfit(ratios, percents, deg=2)
+coeffs = np.polyfit(ratios, percents, deg=3)
 line = np.poly1d(coeffs)
 plt.plot(ratios, line(ratios))
 
 best = minimize(line, x0=losses[0][0])
-print(f'projected best: at ratio: {best.x[0]} with loss: {best.fun}')
+print(f'Projected best: at ratio: {best.x[0]} with loss: {best.fun}')
 
 plt.plot([best.x, best.x], [-0.01, 1/3])
-plt.title(label=f"Projected best ratio:{best.x[0]}")
-#plt.show()
+plt.title(f"Projected best ratio:{best.x[0]}")
 fig.savefig('results.png')
+plt.show()

@@ -20,6 +20,8 @@ Install may take a long time, as several dependencies are heavy.
     
     sim_minimize.py - run sim, use scipy.optimize.minimize to find solution; 
                       each iteration increases number of flips, decreases timestep
+                      
+    sim_linspace.py - run sim on a distribution of ratios
 
 ## files
     sim.log - log file of sims run

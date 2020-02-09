@@ -4,8 +4,7 @@ setup(
     name='ThreeSidedCoin',
     version='0.2',
     description='A pybullet simulation to find optimal 3-sided coin geometry.',
-    author='Tim Olson',
-    author_email='timjolson@user.noreplay.github.com',
+    author='timjolson',
     packages=[],
     install_requires=['numpy','pybullet','tqdm','matplotlib', 'scipy'],
 )

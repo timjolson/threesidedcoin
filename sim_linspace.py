@@ -8,14 +8,14 @@ import numpy as np
 logging.basicConfig(filename='./sim_linspace.log', filemode='w', level=logging.INFO, format="%(filename)s:%(funcName)s:%(lineno)s:%(msg)s")
 
 #########################
-num_flips = 1_000
-timestep = 1/2500.
+num_flips = 25_000
+timestep = .0002
 
 goal_rate = 1/3  # rate of result == edge
 tolerance = 1/num_flips  # tolerance to stop searching
 
-num_points = 100
-bounds = [0.98, 1.1]  # ratio bounds to evaluate within
+num_points = 20
+bounds = [1.008, 1.04]  # ratio bounds to evaluate within
 #########################
 
 sim = Sim(timestep=timestep)
@@ -35,12 +35,17 @@ def main(ratio, sim):
     stopped = False
     count = 0
     try:
-        for i in tqdm(range(sim.flips)):
+        #bar = tqdm(range(sim.flips))
+        #for i in bar:
+        for i in tqdm(range(sim.flips), leave=False):
             result = sim.flip()
             results[result] += 1
-            count = i
+            count += 1
     except KeyboardInterrupt:
         stopped = True
+    
+    #bar.clear()
+    #bar.close()
     
     edges = results['edge']/(count - results['error'])
     edges = loss(edges)
@@ -67,7 +72,8 @@ while _points:
 st = f"Evaluating {num_points} ratios between {bounds}, flips {num_flips}, timestep {timestep}"
 logger.info(st)
 print(st)
-for p in points:
-    print(f'Ratio {p}: {main(p, sim)}')
+for p in tqdm(points):
+    #print(f'Ratio {p}: {main(p, sim)}')
+    main(p, sim)
 
 import show_results

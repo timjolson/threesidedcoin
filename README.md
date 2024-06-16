@@ -24,7 +24,7 @@ Install may take a long time, as several dependencies are heavy.
     sim_linspace.py - run sim on a distribution of ratios
 
 ## files
-    sim.log - log file of sims run
+    sim_*.log - log file of sims run
     
     cylinder_ref.urdf - a reference URDF file for the coin geometry
     

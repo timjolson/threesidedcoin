@@ -138,8 +138,8 @@ class Sim():
         self.urdf_flag = False
 
     def init_sim(self, start_orn, start_vel, start_rot, start_pos):
-        with open(f'last_run_{self.cid}.tmp', 'w') as f:
-            f.write(f"{start_orn, start_vel, start_rot, start_pos}")
+        #with open(f'last_run_{self.cid}.tmp', 'w') as f:
+        #    f.write(f"{start_orn, start_vel, start_rot, start_pos}")
         
         self.make_coin(start_pos, start_orn)
         p.resetBaseVelocity(self.cyl, start_vel, start_rot, physicsClientId=self.cid)
@@ -151,7 +151,7 @@ class Sim():
                          lateralFriction=self.lateralFriction)
 
     def end(self):
-        logger.info(f'Sim {self.cid} Disconnecting')
+        logger.debug(f'Sim {self.cid} Disconnecting')
         try:
             p.disconnect(physicsClientId=self.cid)
         except Exception:

@@ -8,19 +8,19 @@ from scipy.optimize import minimize
 logging.basicConfig(filename='./sim_minimize.log', filemode='w', level=logging.INFO, format="%(filename)s:%(funcName)s:%(lineno)s:%(msg)s")
 
 #########################
-start_num_flips = 100000
-flips_step_rate = 0  # increase in flip count between ratio changes
+start_num_flips = 1_000_000
+flips_step_rate = 20_000  # increase in flip count between ratio changes
 max_flips_limit = 10_000_000  # max number of flips for a ratio ever
 
-start_timestep = 0.0002
-timestep_rate = 0  # decrease in timestep between ratio changes
-min_timestep_limit = 1e-10  # minimum timestep ever
+start_timestep = 1/2000.
+timestep_rate = 1/20000  # decrease in timestep between ratio changes
+min_timestep_limit = 1e-8  # minimum timestep ever
 
 goal_rate = 1/3  # rate of result == edge
-tolerance = 1/max_flips_limit  # tolerance to stop optimization
+tolerance = 1/5_000_000  # tolerance to stop optimization
 
 start_guess = 0.968
-bounds = [0.9, 1.0]  # ratio bounds // Exception raised if minimize takes us outside
+bounds = [0.2, 2.0]  # ratio bounds // Exception raised if minimize takes us outside
 
 # ratio bounds from youtube video
 #1. d = 2*sqrt(2) * height
@@ -78,7 +78,7 @@ def main(ratio, sim):
         for i in tqdm(range(sim.flips)):
             result = sim.flip()
             results[result] += 1
-            count += 1
+            count = i
     except KeyboardInterrupt:
         stopped = True
     

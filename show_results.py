@@ -36,14 +36,14 @@ percents = [r[1] for r in results]
 fig = plt.figure(figsize=(7,4))
 plt.scatter(ratios, percents)
 
-#coeffs = np.polyfit(ratios, percents, deg=3)
-#line = np.poly1d(coeffs)
-#plt.plot(ratios, line(ratios), color='r')
+coeffs = np.polyfit(ratios, percents, deg=3)
+line = np.poly1d(coeffs)
+plt.plot(ratios, line(ratios), color='r')
 
-#best = minimize(line, x0=min(percents))
-#print(f'Projected best: at ratio: {best.x[0]} with loss: {best.fun}')
+best = minimize(line, x0=min(percents))
+print(f'Projected best: at ratio: {best.x[0]} with loss: {best.fun}')
 
-#plt.plot([best.x, best.x], [-0.01, 1/4])
-#plt.title(f"Projected best ratio:{best.x[0]}")
+plt.plot([best.x, best.x], [-0.01, 1/4])
+plt.title(f"Projected best ratio:{best.x[0]}")
 fig.savefig('results.png')
 plt.show()

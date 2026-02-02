@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ThreeSidedCoin"
+version = "0.2"
+description = "A pybullet simulation to find optimal 3-sided coin geometry."
+authors = [ { name = "timjolson", email = "3058949-timjolson@users.noreply.gitlab.com" } ]
+dependencies = [
+    "numpy",
+    "pybullet",
+    "tqdm",
+    "matplotlib",
+    "scipy"
+]

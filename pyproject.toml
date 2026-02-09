@@ -2,7 +2,7 @@
 name = "ThreeSidedCoin"
 version = "0.2"
 description = "A pybullet simulation to find optimal 3-sided coin geometry."
-authors = [ { name = "timjolson", email = "3058949-timjolson@users.noreply.gitlab.com" } ]
+authors = [ { name = "timjolson", email = "timjolson@users.noreply.github.com" } ]
 dependencies = [
     "numpy",
     "pybullet",
@@ -11,7 +11,7 @@ dependencies = [
     "scipy"
 ]
 
-urls = { "Homepage" = "https://gitlab.com/timjolson/threesidedcoin" }
+urls = { "Homepage" = "https://github.com/timjolson/threesidedcoin" }
 readme = "README.md"
 license = { file = "LICENSE" }
 
